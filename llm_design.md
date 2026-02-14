@@ -83,5 +83,5 @@ Example:
 ---
 
 ## 6) Current state summary
-- Mock endpoint is implemented and production-friendly for interview scope.
-- Architecture is ready to swap mock logic with a real LLM provider later without changing API contract.
+- The mock AI assessment endpoint is implemented with a clean extension point for future LLM integration.
+- The architecture allows replacing the mock logic with a real provider without changing the API contract or business layer.
