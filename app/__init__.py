@@ -1,0 +1,1 @@
+"""Mini Healthcare API package."""

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environments
+.env
+.venv/
+app/__pycache__
+
+# Poetry
+poetry.lock
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+
+# Alembic
+alembic/versions/__pycache__/

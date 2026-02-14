@@ -1,0 +1,19 @@
+[project]
+name = "mini-helath-care"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "shinas-sa",email = "shinas.a@simplicitylabs.org"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard] (>=0.129.0,<0.130.0)",
+    "psycopg2-binary (>=2.9.11,<3.0.0)",
+    "sqlalchemy (>=2.0.46,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
