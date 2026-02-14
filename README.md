@@ -55,6 +55,7 @@ Async FastAPI backend for managing hospital departments, equipment inventory, an
 
 ## Setup (Poetry)
 ```bash
+poetry lock
 poetry install --with dev
 cp .env.example .env
 ```
@@ -82,6 +83,7 @@ poetry run uvicorn app.main:app --reload
 Open docs: `http://127.0.0.1:8000/docs`
 
 ## API Endpoints
+If `API_PREFIX` is set (example `/api/v1`), prepend it to all routes below.
 - `POST /departments`
 - `GET /departments?organization_id=1`
 - `POST /equipment`

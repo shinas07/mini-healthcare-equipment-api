@@ -9,7 +9,7 @@ __pycache__/
 app/__pycache__
 
 # Poetry
-poetry.lock
+# keep poetry.lock committed
 
 # IDE
 .vscode/
@@ -20,3 +20,6 @@ logs/
 
 # Alembic
 alembic/versions/__pycache__/
+
+# Local sqlite databases
+*.db
