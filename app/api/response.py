@@ -1,6 +1,10 @@
+"""Standard API response envelope helpers."""
+
 from typing import Any, Generic, TypeVar
 
+from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel, Field
+
 
 T = TypeVar("T")
 
@@ -18,8 +22,10 @@ class ErrorResponse(BaseModel):
 
 
 def success_response(message: str, data: T | None = None) -> SuccessResponse[T]:
-    return SuccessResponse(message=message, data=data)
+    """Build success response in required interview format."""
+    return SuccessResponse(message=message, data=jsonable_encoder(data))
 
 
 def error_response(message: str, errors: dict[str, Any] | None = None) -> ErrorResponse:
+    """Build error response in required interview format."""
     return ErrorResponse(message=message, errors=errors or {})
